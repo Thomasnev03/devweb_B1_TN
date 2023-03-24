@@ -1,11 +1,14 @@
 console.log('jeu démarré');
 let gamezone = document.getElementById('gamezone');
 let box = document.querySelector('.box');
+let endscreen= document.getElementById('endscreen');
 //console.log(box);
 let click = 0;
 let scoreElement = document.querySelector('#score');
 
 let chrono = 60;
+gameover = 0;
+loopPlay = false;
 let chronoElement = document.querySelector('#chrono');
 chronoElement.innerHTML = chrono;
 
@@ -28,12 +31,40 @@ box.style.top = randomTop + 'px';
 
 });
 
+var score = 0;
+
+console.log("Score: " + score);
+var scoreObj = {
+    score: 0,
+    nametag: "John",
+};
+
+console.log("Score :" + scoreObj.score);
+console.log("Joueur :" +scoreObj.playerName);
+
+var scoreDiv = document.getElementById("score");
+var score = 0;
+scoreDiv.innerHTML = "Score :" + score;
+
+
+
+
+const gameend = () => {
+    endscreen.innerHTML = `<div class="gameover">Fin de partie <br/>score: ${score}
+    </div>`;
+    endscreen.style.visibility = 'visible';
+    endscreen.style.opacity ='1';
+    loopPlay = false;
+};
+
 setInterval(() => {
     
    // console.log("timer"); 
    if (chrono != 0){
    chrono --;
    chronoElement.innerHTML = chrono;
-   }  
+   }  else if (chrono<=0){
+    gameover
+   }
     
 }, 1000)
