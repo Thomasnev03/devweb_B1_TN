@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("https://cdn.getyourguide.com/img/location/546c723935247.jpeg/99.jpg");
+    text-align: center;
+    min-height: 100vh;
+}
+
+nav ul {
+    display: flex;
+    background: beige;
+    margin-bottom: 20px;
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: wavy;
+    color: green;
+    font-weight: 900;
+    
+}
+
+nav ul li a:hover {
+    color: goldenrod;
+    background: green;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h1{
+font-style: oblique;
+font-variant: small-caps;
+font-weight: bold;
+color: goldenrod;
+text-decoration: underline;
+}
+
+h2{
+    font-style: inherit;
+}

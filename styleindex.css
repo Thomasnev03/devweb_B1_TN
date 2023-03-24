@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+background-image: url("https://www.okvoyage.com/wp-content/uploads/2020/04/saint-patrick.jpg");
+}
+p{
+    color: rebeccapurple;
+    background-color: blanchedalmond;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+   /* border-radius: 8px;*/
+ 
+}
+
+footer{
+    height: 40px;
+
+}
